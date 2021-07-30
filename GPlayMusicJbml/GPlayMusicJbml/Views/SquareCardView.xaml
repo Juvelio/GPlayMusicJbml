@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             xmlns:model="clr-namespace:GPlayMusicJbml.Models"
              x:Class="GPlayMusicJbml.Views.SquareCardView">
     <ContentView.Content>
-        <pv:PancakeView VerticalOptions="Start" BackgroundColor="White" IsClippedToBounds="True"  Margin="5,5,5,5">
+        <pv:PancakeView VerticalOptions="Start" BackgroundColor="White" IsClippedToBounds="True"  Margin="5,5,5,5" x:DataType="model:SquareCard">
             <!--Elevation="10"-->
             <Grid BackgroundColor="White" VerticalOptions="Start" HeightRequest="230">
                 <Grid.RowDefinitions>
